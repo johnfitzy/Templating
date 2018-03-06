@@ -12,19 +12,19 @@
 <h:body>
     <div id="top">
         <ui:insert name="top">
-            <h:outputText value="Default -> Top Section"/>
+            <ui:include src="defaultTop.xhtml"/>
         </ui:insert>
     </div>
 
     <div id="mid">
         <ui:insert name="mid">
-            <h:outputText value="Default -> Mid Section"/>
+            <ui:include src="defaultMid.xhtml"/>
         </ui:insert>
     </div>
 
     <div id="bottom" class="left_content">
         <ui:insert name="bottom">
-            <h:outputText value="Default -> Bottom Section"/>
+            <ui:include src="defalutBottom.xhtml"/>
         </ui:insert>
     </div>
 </h:body>
