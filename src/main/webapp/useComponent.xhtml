@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:comp="http://xmlns.jcp.org/jsf/composite/custom">
+
+<h:body>
+    <!-- this is a good reference for composite components https://coderwall.com/p/8wbj1w/jsf-2-2-composite-components -->
+    <ui:composition template="template/template.xhtml">
+        <ui:define name="top">
+            <h1>useComponent.xhtml -> Top Section</h1>
+        </ui:define>
+
+        <ui:define name="mid">
+            <comp:myComponent title="This is a random string"/>
+        </ui:define>
+
+        <ui:define name="bottom">
+            <h1>useComponent.xhtml -> Bottom Section</h1>
+        </ui:define>
+    </ui:composition>
+</h:body>
+</html>
