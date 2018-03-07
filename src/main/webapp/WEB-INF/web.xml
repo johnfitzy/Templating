@@ -18,9 +18,9 @@
 
     <!-- protect templates dir -->
     <security-constraint>
-        <display-name>Restrict direct access to JSF resources</display-name>
+        <display-name>Restrict direct access to JSF templates</display-name>
         <web-resource-collection>
-            <web-resource-name>JSF resources</web-resource-name>
+            <web-resource-name>JSF templates</web-resource-name>
             <url-pattern>/template/*</url-pattern>
         </web-resource-collection>
         <auth-constraint/>
